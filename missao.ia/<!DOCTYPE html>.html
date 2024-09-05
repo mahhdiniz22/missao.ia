@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Temas Sociais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz sobre Temas Sociais</h1>
+        <p>Participe do nosso teste para avaliar seu conhecimento sobre assuntos sociais relevantes. Responda às perguntas a seguir e descubra como você se sai!</p>
+
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Qual é a principal razão para a desigualdade social?</p>
+                <label><input type="radio" name="q1" value="a"> Falta de educação</label><br>
+                <label><input type="radio" name="q1" value="b"> Desigualdades econômicas</label><br>
+                <label><input type="radio" name="q1" value="c"> Diferenças culturais</label><br>
+            </div>
+
+            <div class="question">
+                <p>2. Qual é uma solução eficaz para enfrentar a pobreza?</p>
+                <label><input type="radio" name="q2" value="a"> Diminuição de impostos</label><br>
+                <label><input type="radio" name="q2" value="b"> Aumento do salário mínimo</label><br>
+                <label><input type="radio" name="q2" value="c"> Melhoria na educação e acesso a serviços públicos</label><br>
+            </div>
+
+            <div class="question">
+                <p>3. O que significa inclusão social?</p>
+                <label><input type="radio" name="q3" value="a"> Exclusão de grupos minoritários</label><br>
+                <label><input type="radio" name="q3" value="b"> Igualdade de oportunidades para todos</label><br>
+                <label><input type="radio" name="q3" value="c"> Promoção do individualismo</label><br>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Enviar Respostas</button>
+        </form>
+
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
